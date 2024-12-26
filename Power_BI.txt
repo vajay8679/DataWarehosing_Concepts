@@ -1,0 +1,957 @@
+
+Day 1:--
+1. Why Data Analytics?
+2. Gartner BI tools matrix, competitor of Power BI
+Power BI vs tableau
+Power BI vs SAP Analytics Cloud
+3. Fortune 500 companies
+4. Low code and no code platform
+5. Power Platform (Power BI, Power Apps, Power Automate, Power Pages)
+6. Power Query history
+
+Day 2:--
+1. Business KPI (Key Performance Metrics)
+2. What is Power BI,
+a) connects the source, 
+b) ETL (Extraction, Transformation and Load), 
+c) data visualization, 
+d) create KPIs/Calculation, 
+e) share the reports
+3. Power BI Desktop, Power BI service ( https://app.powerbi.com/ ), Power BI Mobile App (Android/iOS)
+
+Day 3:--
+
+Business KPI scenario
+Analyze the data in Excel
+then Import the data in PBI
+Transform the data in Power Query Editor
+
+Day 4:--
+
+Applied Steps
+Advanced Editor to see the M Language Code
+@naved, please document these topics as well
+I will review the document on Monday
+
+Day 5:--
+
+Topics discussed today
+1. PBI Desktop Version updates
+2. Transformation in PBI
+3. concatenation, Merge, duplicates, split, 
+4. Age calculation in Power Query and in DAX
+5. Power Query M code in Advanced Editor
+6. Options in Home ribbon, Transform, Add Column and View ribbon
+
+
+Day 6:--
+
+Duration, Group By, Conditional Column, Concatenation/Merge, Rounding,  Date and Time Operation
+Merge and Append
+
+Day 7:--
+1. Merge Queries
+2. Append Queries
+3. Combine Files
+4. Advanced Editor
+5. Duration
+1. Page Layout
+2. VIsualization tab/ribbon
+3. Different Charts 
+a. (Bar Chart and Column Chart)
+b. Line Chart or Trend Chart
+c. Scatter plot
+d. Waterfall Chart
+4. Slicers
+a. List Box
+b. Dropdown
+C. Tiles
+d. Date Between
+e. Relative Date
+5. Color Theme, use In-Built Theme in PBI
+
+
+Day 8:--
+Relative Date
+Combination Chart, charts with Multiple Y axis
+Table vs Matrix - Assignment
+Q&A
+Decomposition Tree
+Power BI Report Builder (to build Paginated Reports)
+Power Apps in PBI
+Power Automate in PBI
+
+Day 9:--
+
+Theme (Shell, Exxon Mobil, Apple/Microsoft)
+Power Apps for PBI - Shalini
+Power Automate for PBI - Naved
+Paginated reports in PBI - Manish
+Custom Visual in PBI (Scrollable, Word Cloud, Diff Pie)
+Maps
+Metrics (Preview)- Scorecard
+Matrix (3 Matrix, with diff combinations of Dimension and Measure, and with diff Formatting options)
+
+
+Day 10:--
+
+What are the connectivity options we have in PBI?
+Import, Direct, (Live Connectivity, Hybrid, Dual Connection)
+Diff Import and Direct connection, benefits, drawbacks, limitation
+Scheduled Refresh (Import)
+Publishing the PBI report to PBI Service (Pro License)
+
+Day 11:--
+
+What is Measure
+What is a Calculated Column
+DAX
+Diff between MEasure and Calculated COlumn
+diff Sum and SUMX
+Can we write same formula or expression in Measure and Calculated Column
+
+
+Day 12:--
+
+Average
+AverageX
+Count
+CountA
+CountX
+CountRows
+SUM
+SUMX
+DATEDIFF
+TODAY
+NOW
+YEAR
+Month
+
+
+Day 13:--
+
+Row Context
+Filter Context
+DAX Guide
+CALCULATE, RANKX,CONCATENATEX,FILTER,SWITCH,If Else
+
+
+Day 14:--
+Dynamic Title of CHart based on the selected value in Slicer
+waht is paginated report?
+what is a dashboard?
+diff between PBI Report and Dashboard?
+what are Workspace roles?
+Workspace App
+Roles in workspaces in Power BI - Power BI
+
+
+Day 15:--
+
+RLS - Row Level Security
+Summarize function in DAX
+Time intelligence Function
+
+
+Day 16:--
+
+what data sources you have used to deliver PBI reports?
+what kind of reports you created, which business area (Finance, Sales, Operational etc.)
+Which Clients (Line of Business)-- Oil & Gas industry, BioPharma
+Technical Questions
+DirectQuery vs Import
+incremental data refresh
+Schedule Refresh limitation
+Diff between Calculated Column and Measure
+what are the Filter Contexts
+some DAX Expression in writing
+what is Live Data Connectivity?
+Bookmarks
+Sync Slicers
+Gateway
+
+
+Day 17:--
+
+Edit INteractions
+Analyze the data, perform some transformation, do the data modeling, create some DAX formulas,
+prepare 4 pages of reports, Use Bookmarks, Sync Slicerts, Edit Interactions, Drill down analysis
+
+
+Day 18:--
+
+Drill through with parameter pass
+Tooltip page
+Page Tooltip
+Most important topics are RLS and Parameters
+Deployment Pipelines
+
+
+Day 19:--
+
+USERELATIONSHIP
+USERPRINCIPLE
+RELATED
+Summarize
+SAMEPERIODLASTYEAR
+TOTALMTD
+VALUES
+All, ALLSELECTED, ALLEXCEPT,CALCULATE,
+Performance Analyzer
+
+
+Day 20:--
+
+
+MOM's of (18th-july-2024)
+
+Intoduction on Power BI
+Intoduction on Power Platform , Power App, Power Automate
+Data Connectivity Mode.
+Tasks given to analyse data of Excel sheet.
+
+
+
+ ----------------------------------------------------------  Power BI Interview Questions  --------------------------------------------------------------------
+
+
+
+Power BI Desktop and Power BI Service serve different but complementary purposes in the workflow of developing and sharing Power BI reports. Here's a breakdown of why you would use each:
+
+Power BI Desktop
+Purpose: Development and Authoring
+
+Creating Reports:       Power BI Desktop is a robust tool for creating and designing reports. It allows you to connect to various data sources, transform data using Power Query, and create complex data models and visualizations.
+Data Transformation:    With Power Query Editor, you can perform advanced data cleaning and transformation tasks.
+DAX Calculations:      You can create calculated columns, measures, and custom visualizations using DAX (Data Analysis Expressions).
+Testing and Iteration:  Power BI Desktop is ideal for testing different visualizations, performing data analysis, and iterating on your reports until they meet your requirements.
+
+Power BI Service
+Purpose: Sharing, Collaboration, and Distribution
+
+Publishing Reports:      After creating and testing reports in Power BI Desktop, you publish them to the Power BI Service. This makes them accessible to other users in your organization.
+Collaboration:           Power BI Service allows multiple users to collaborate on reports and dashboards. Users can share reports, provide feedback, and collaborate on data analysis.
+Data Refresh:            You can set up scheduled data refreshes in the Power BI Service to ensure that your reports always reflect the most current data.
+Dashboards:              In the Power BI Service, you can create dashboards, which are collections of visuals from multiple reports. Dashboards provide a high-level view of key metrics.
+Workspaces:              Workspaces in the Power BI Service enable collaborative environments where teams can work on reports and dashboards together.
+App Distribution:        You can bundle reports and dashboards into apps for easy distribution and access control within your organization.
+Power BI Mobile:         Reports and dashboards published to the Power BI Service can be accessed on mobile devices through the Power BI Mobile app, allowing for on-the-go data access.
+
+                                                                  Workflow Summary
+Develop in Power BI Desktop:
+
+--  Connect to data sources.
+--  Clean and transform data.
+--  Create data models.
+--  Design and test reports.
+--  Publish to Power BI Service:
+
+Share reports with others.
+
+--  Set up data refresh schedules.
+--  Create and share dashboards.
+--  Collaborate with team members.
+--  Distribute reports and dashboards via apps.
+
+
+Why Use Both?
+Development Environment: Power BI Desktop offers a comprehensive environment for developing and testing reports with all the necessary tools for data modeling and visualization.
+Sharing and Collaboration: Power BI Service provides a platform for sharing and collaboration, ensuring that stakeholders have access to the latest reports and data insights.
+Data Management: The Power BI Service handles data refreshes and ensures that reports are always up-to-date.
+Accessibility: Power BI Service makes reports accessible from anywhere, including mobile devices, which is essential for modern business operations.
+By leveraging both Power BI Desktop for development and the Power BI Service for sharing and collaboration, you can create a powerful and efficient workflow for business intelligence and data analysis within your organization.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+workspaces allows you to assign roles and permissions to a particular individual.
+workspaces have user role & individual role . Admin , member , contributer , viewer .
+It is a places where you create, publish, and manage apps for your organization.
+
+
+
+                                                          Power BI dashboard and report
+
+Power BI dashboard is a single-page canvas. It tells stories through its multiple 
+configurable sections. As a business, you can use the dashboard to tell a story or 
+get an eagle-eye view of your processes. Dashboards are accessible once you log in 
+to Power BI Service(not available in Power BI Desktop).
+Dashboards provide a top-level data summary, usually in graphs, charts, and other visuals.
+Dashboards are ideal for users who need to quickly make decisions based on the data and
+monitor key performance indicators.
+Dashboards are static.
+
+Power BI report is generated from a dataset and provides a multi-view perspective
+teams can use Power BI to transform, clean, and connect disparate data sets and create a 
+data model. Once a data model is created, they can create graphs or charts and include them in
+a report. Moreover, reports are dynamic and are updated based on underlying data changes.
+
+                                                     Import Query Mode 
+
+In Import mode , we are creating a copy of the data source in power bi.
+There is wide range of data sources.
+Advanced Modelling & Transformations.
+Limited Data Refreshes 
+File size also limited 
+
+                                                    Direct Query Mode 
+For refreshing our data we have to do schedule refresh in power bi service .
+We cannot do dax calculations , Also not Advanced Modelling & Transformations.
+There is no limitations on the file size.
+
+Customer wise average order to delivery time 
+customer wise sales 
+top2 parts sales wise 
+make an arrangement to download the data from the dashboard (select key fields).
+customer wise on time delivery performance 
+customer wise sales contribution
+customers wise no of orders 
+top2 customers - order line wise
+top2 customers - by no. of orders placed 
+top2 customers - by sales value 
+upload & clean sample txt file.
+
+ 1) Customer-wise Average Order to Delivery Time
+Measure: DAX
+
+Avg Order to Delivery Time = AVERAGEX(
+    Customer_Performance_All, 
+    DATEDIFF(Customer_Performance_All[Order Date], Customer_Performance_All[Delivery Date], DAY)
+)
+
+
+Customer_Wise_Avg_order = AVERAGEX(Cust_Performance_All, DATEDIFF(Cust_Performance_All[Order Date],Cust_Performance_All[Delivery Date].[Day]))
+
+
+Visual: Create a table or bar chart with Customer Name and Avg Order to Delivery Time.
+
+ 2) Customer-wise Sales
+Measure: DAX
+
+Customer Sales = SUMX(Customer_Performance_All, Customer_Performance_All[Ordered Qty] * Customer_Performance_All[Price])
+Visual: Use a table or bar chart to display Customer Name and Customer Sales.
+
+ 3) Top 2 Parts Sales-wise
+Visual:
+Create a bar chart.
+Use Part No. as the axis and Customer Sales as the value.
+Sort in descending order and apply a top 2 filter.
+
+4) Download Data Arrangement
+    Implementation:
+Create a Power BI table visual with key fields (e.g., Customer Name, Order No., Part No., Ordered Qty, Order Date, Delivery Date).
+Enable export data feature in Power BI.
+
+5) Customer-wise On-time Delivery Performance
+ Measure: DAX
+
+On-time Delivery = 
+CALCULATE(
+   COUNTROWS(Customer_Performance_All), 
+   Customer_Performance_All[Delivery Date] <= Customer_Performance_All[Order Date]
+)
+
+
+Visual: Display Customer Name and On-time Delivery in a table or bar chart.
+
+ 6)  Customer-wise Sales Contribution
+ Measure: DAX
+
+Sales Contribution = DIVIDE([Customer Sales], [Total Sales], 0)
+Visual: Show Customer Name and Sales Contribution in a table or bar chart.
+
+ 7) Sales Trend (with filters)
+Visual:
+Create a line chart.
+Use Order Date as the x-axis and Customer Sales as the y-axis.
+Add slicers for Customer Name and Part No. to filter the trend.
+ 8) Customer-wise Number of Orders
+Measure:
+DAX
+
+Number of Orders = COUNTROWS(Customer_Performance_All)
+Visual: Display Customer Name and Number of Orders in a table or bar chart.
+
+9)  Top 2 Customers – Order Line-wise
+Measure:
+DAX
+
+Orders per Line = COUNTROWS(Customer_Performance_All)
+Visual: Use Customer Name and Orders per Line, sorted by top 2.
+
+10) Top 2 Customers – By Number of Orders Placed
+Top 2 Customers by Orders = RANKX(ALL(Customer_Performance_All[Customer Code]), [Number of Orders], , DESC)
+
+11) Top 2 Customers – By Sales Value
+Measure:
+Top 2 Customers by Sales Value = RANKX(ALL(Customer_Performance_All[Customer Code]), [Customer Sales], , DESC)
+
+***********************************************************************************************************************************************************************
+                 ............................................  Accenture  ........................................
+
+1) can you explain the concept of data storytelling in power bi and how you would approach it ??
+
+Solution :-------------   Key Components of Data Storytelling:
+Data: Raw facts and figures collected from various sources.
+Visualizations: Charts, graphs, and other visuals that make the data easy to interpret.
+Context: The story or background that explains why the data is important.
+Narrative: A clear, logical flow of insights that guides the audience through the data.
+
+                  1. Understand the Audience and Purpose
+Who will be using the report or dashboard? (e.g., executives, managers, analysts)
+Why is the data important to them? What decisions will they make based on this information?
+This will help in selecting the right data and the best visualizations to use.
+
+                  2. Data Preparation and Exploration
+Clean and model the data: Ensure the data is accurate, relevant, and properly structured for analysis.
+Explore the data: Look for trends, patterns, and outliers that can be turned into insights.
+
+                 3. Choose the Right Visualizations
+Focus on clarity: The goal is to simplify the data for the audience, not overwhelm them.
+Use visualizations purposefully: For example:
+Line charts for trends over time.
+Bar charts for comparisons.
+Pie or donut charts for proportions.
+Scatter plots for correlations.
+Highlight key insights: Use visual cues like colors, annotations, and tooltips to direct attention to important data points.
+                 4. Develop a Narrative Flow
+Set the context: Start with an overview of the key metrics or high-level insights.
+Dive into details: Gradually drill down into the specifics, showing how different aspects of the data connect.
+Provide actionable insights: End the story with clear recommendations or conclusions.
+                 5. Design for Interaction
+Power BI allows for interactive dashboards, which means users can explore the data themselves by filtering, slicing, and drilling down.
+Allow flexibility: Enable slicers, filters, and drill-through functionality so that different audiences can view the data from perspectives that matter to them.
+                6. Maintain a Balance between Data and Design
+Don’t overwhelm the audience with too much data or too many visuals.
+Keep the design simple, with ample white space, and ensure the story flows logically from one insight to the next.
+                 7. Test and Iterate
+Test the story on a small group before rolling it out.
+Gather feedback and make improvements to ensure clarity, relevance, and impact.
+Example:
+If you were creating a Power BI report on sales performance over time, the story could follow this structure:
+
+Start with a high-level overview of total sales growth over the past year.
+Then, move to a comparison of regions to show which areas are driving growth.
+Drill down into product categories to identify the best and worst performers.
+Highlight anomalies or outliers, such as a sudden dip in sales during a specific month, and provide context for what happened during that time.
+End with recommendations, such as focusing on underperforming regions or products.
+This approach makes the data more than just numbers—it tells a story that can drive real business decisions.
+
+2) Can you walk me through your process for creating a power BI dashboard ??
+3) Cn you explain the concept of data governance in power bi ??
+4) How do you handle data handling in power bi ??
+5) What are different types of visuals and how would you use each in power bi ??
+
+***********************************************************************************************************************************************************************
+We have 2 columns ie., "Planned Date" and other is "Actual Date". 3rd column is "Status" column which has records dependent on value of first 2 columns.
+
+write a dax to show status as Blank in Status column when both Planned Date & Actual Date is Blank.
+Status = 
+SWITCH TRUE(),
+NOT ISBLANK(Plan Data[Planned Date] && NOT ISBLANK(Plan Data[Planned Date]),
+
+IF(Plan Data[Planned Date]>=Plan Data[Actual Date]),"On Time",
+IF(Plan Data[Planned Date]<Plan Data[Actual Date]),"Late",
+
+IF(ISBLANK(Plan Data[Planned Date]) && ISBLANK(Plan Data[Actual Date]), " "
+
+
+Scenario: Your dataset has Sales and Budget columns by month.
+Question: Write a DAX measure to calculate the cumulative sales and budget by month for the current year.
+Expected Measures:
+Cumulative_Sales = 
+CALCULATE(
+    SUM(Sales[SalesAmount]),
+    FILTER(
+        ALL(Sales),
+        Sales[Month] <= MAX(Sales[Month]) && Sales[Year] = MAX(Sales[Year])
+    )
+)
+
+
+-----------------------------------------------------------------------------------------------------
+Scenario: A sales table contains SalesAmount and OrderDate.
+Question: Write a measure to calculate the Year-over-Year (YoY) growth percentage in sales.
+Expected Measure:
+
+YoY_Growth = 
+DIVIDE(
+    SUM(Sales[SalesAmount]) - CALCULATE(SUM(Sales[SalesAmount]), SAMEPERIODLASTYEAR(Sales[OrderDate])),
+    CALCULATE(SUM(Sales[SalesAmount]), SAMEPERIODLASTYEAR(Sales[OrderDate]))
+)
+
+-----------------------------------------------------------------------------------------------------
+
+Scenario: A sales table contains columns SalesAmount, OrderDate, and Category.
+Question: Write a measure to calculate the contribution of each category to the total sales dynamically.
+Expected Measure:
+
+Category_Contribution = 
+DIVIDE(
+    SUM(Sales[SalesAmount]),
+    CALCULATE(SUM(Sales[SalesAmount]), ALL(Sales[Category]))
+)
+-----------------------------------------------------------------------------------------------------
+Scenario: A transactions table contains TransactionDate, CustomerID, and PurchaseAmount.
+Question: Write a measure to calculate the number of unique customers who made purchases in the last 12 months.
+Expected Measure:
+
+Customers_Last_12_Months = 
+CALCULATE(
+    DISTINCTCOUNT(Transactions[CustomerID]),
+    DATESINPERIOD(Transactions[TransactionDate], MAX(Transactions[TransactionDate]), -12, MONTH)
+)
+
+-----------------------------------------------------------------------------------------------------
+Scenario: A table contains Product, Sales, and Date.
+Question: Create a DAX measure to calculate the running total of sales for each product, resetting at the start of each year.
+Expected Measure:
+
+Running_Total_By_Year = 
+CALCULATE(
+    SUM(Sales[Sales]),
+    FILTER(
+        ALL(Sales),
+        Sales[Date] <= MAX(Sales[Date]) && YEAR(Sales[Date]) = YEAR(MAX(Sales[Date]))
+    )
+)
+
+-----------------------------------------------------------------------------------------------------
+Scenario: You need to rank products by sales within each category dynamically.
+Question: Write a DAX formula to rank products by their sales, grouped by category.
+Expected Measure:
+
+
+Rank_By_Sales = 
+RANKX(
+    ALL(Sales[Product]),
+    CALCULATE(SUM(Sales[SalesAmount])),
+    ,
+    DESC,
+    DENSE
+)
+
+-----------------------------------------------------------------------------------------------------
+Scenario: A table contains EmployeeID, HireDate, and Salary.
+Question: Write a DAX measure to calculate the average salary for employees hired in the last 5 years.
+Expected Measure:
+
+
+Avg_Salary_Last_5_Years = 
+AVERAGEX(
+    FILTER(
+        Employees,
+        DATEDIFF(Employees[HireDate], TODAY(), YEAR) <= 5
+    ),
+    Employees[Salary]
+)
+Sure! Below are the coding questions with the corresponding sample raw input data and solutions.
+
+### *Question 1: Calculate Year-to-Date (YTD) Sales*
+
+*Sample Input Data:*
+plaintext
+| Date       | SalesAmount |
+|------------|-------------|
+| 2023-01-01 | 500         |
+| 2023-02-01 | 700         |
+| 2023-03-01 | 800         |
+| 2023-04-01 | 1000        |
+
+
+*DAX Formula:*
+DAX
+YTD_Sales = TOTALYTD(SUM(Sales[SalesAmount]), Sales[Date])
+
+
+### *Question 2: Create a Calculated Column to Categorize Sales Amounts*
+
+*Sample Input Data:*
+plaintext
+| SalesAmount |
+|-------------|
+| 800         |
+| 1500        |
+| 6000        |
+| 2000        |
+
+
+*DAX Formula:*
+DAX
+SalesCategory = 
+SWITCH(
+    TRUE(),
+    Sales[SalesAmount] < 1000, "Low",
+    Sales[SalesAmount] >= 1000 && Sales[SalesAmount] <= 5000, "Medium",
+    Sales[SalesAmount] > 5000, "High"
+)
+
+
+### *Question 3: Calculate the Running Total of Sales*
+
+*Sample Input Data:*
+plaintext
+| Date       | SalesAmount |
+|------------|-------------|
+| 2023-01-01 | 500         |
+| 2023-01-02 | 700         |
+| 2023-01-03 | 800         |
+| 2023-01-04 | 1000        |
+
+
+*DAX Formula:*
+DAX
+RunningTotal = 
+CALCULATE(
+    SUM(Sales[SalesAmount]),
+    FILTER(
+        ALLSELECTED(Sales[Date]),
+        Sales[Date] <= MAX(Sales[Date])
+    )
+)
+
+
+### *Question 4: Add a Custom Column in Power Query to Calculate Age*
+
+*Sample Input Data:*
+plaintext
+| BirthDate   |
+|-------------|
+| 1990-05-15  |
+| 1985-11-23  |
+| 2000-07-30  |
+| 1995-01-10  |
+
+
+*M Language:*
+M
+= Date.Year(DateTime.LocalNow()) - Date.Year([BirthDate])
+
+
+### *Question 5: Calculate the Percentage of Total Sales*
+
+*Sample Input Data:*
+plaintext
+| SalesAmount |
+|-------------|
+| 500         |
+| 700         |
+| 800         |
+| 1000        |
+
+
+*DAX Formula:*
+DAX
+TotalSales = SUM(Sales[SalesAmount])
+
+PercentageOfTotalSales = 
+DIVIDE(
+    Sales[SalesAmount], 
+    [TotalSales]
+)
+
+
+### *Question 6: Create a Measure to Find the Top N Products by Sales*
+
+*Sample Input Data:*
+plaintext
+| Product | SalesAmount |
+|---------|-------------|
+| A       | 500         |
+| B       | 700         |
+| C       | 800         |
+| D       | 1000        |
+| E       | 600         |
+
+
+*DAX Formula:*
+DAX
+TopNProducts = 
+CALCULATE(
+    [TotalSales],
+    TOPN(
+        N, 
+        SUMMARIZE(
+            Sales, 
+            Sales[Product], 
+            "ProductSales", 
+            SUM(Sales[SalesAmount])
+        ), 
+        [ProductSales], 
+        DESC
+    )
+)
+
+
+### *Question 7: Create a Measure to Calculate Month-over-Month (MoM) Growth*
+
+*Sample Input Data:*
+plaintext
+| Date       | SalesAmount |
+|------------|-------------|
+| 2023-01-01 | 1000        |
+| 2023-02-01 | 1500        |
+| 2023-03-01 | 2000        |
+| 2023-04-01 | 2500        |
+
+
+*DAX Formula:*
+DAX
+PreviousMonthSales = 
+CALCULATE(
+    SUM(Sales[SalesAmount]),
+    DATEADD(Sales[Date], -1, MONTH)
+)
+
+MoM_Growth = 
+DIVIDE(
+    [TotalSales] - [PreviousMonthSales], 
+    [PreviousMonthSales]
+)
+
+
+### *Question 8: Filter Rows in Power Query Based on Condition*
+
+*Sample Input Data:*
+plaintext
+| SalesAmount |
+|-------------|
+| 500         |
+| 1500        |
+| 2000        |
+| 800         |
+
+
+*M Language:*
+M
+let
+    Source = Excel.CurrentWorkbook(){[Name="Sales"]}[Content],
+    FilteredRows = Table.SelectRows(Source, each [SalesAmount] >= 1000)
+in
+    FilteredRows
+
+
+### *Question 9: Create a KPI Indicator*
+
+*Sample Input Data:*
+plaintext
+| SalesAmount | TargetAmount |
+|-------------|--------------|
+| 1500        | 1000         |
+| 700         | 1000         |
+| 2000        | 2000         |
+| 1200        | 1500         |
+
+
+*DAX Formula:*
+DAX
+KPIIndicator = 
+IF(
+    Sales[SalesAmount] >= Sales[TargetAmount], 
+    "Met", 
+    "Not Met"
+)
+
+
+### *Question 10: Calculate Cumulative Sum Using Power Query*
+
+*Sample Input Data:*
+plaintext
+| Date       | SalesAmount |
+|------------|-------------|
+| 2023-01-01 | 500         |
+| 2023-01-02 | 700         |
+| 2023-01-03 | 800         |
+| 2023-01-04 | 1000        |
+
+                       ----------   Roll-over month-on-month (MoM) sales   -------------
+MoM Sales = 
+VAR CurrentMonthSales = SUM(Sales[SalesAmount])
+VAR PreviousMonthSales = 
+    CALCULATE(
+        SUM(Sales[SalesAmount]),
+        DATEADD(Sales[Date], -1, MONTH)
+    )
+RETURN
+    CurrentMonthSales - PreviousMonthSales
+
+    --------- A table contains Product, Sales, and Date based on this Create a DAX measure to calculate the running total of sales for each product,.--------
+Running Total = 
+CALCULATE(
+    SUM(Sales[SalesAmount]),
+    FILTER(
+        ALL(Sales[Date]),
+        Sales[Date] <= MAX(Sales[Date])
+    )
+)
+
+Ques 1  :--  Write a DAX code to find how much females contributed in Total Sales in Maharashtra , Karnataka , Gujarat having Table 
+             name Sales and having columns are Amount , Age ,Sale_id,Gender,customer_name , State, .
+
+Ques 2  :--  Calculate last N Days Sales using DAX having Table 1 named as Sales and having columns are Amount , Age ,Sale_id,
+             Gender,customer_id , customer_name , State, Table 2 named as AW_Calender having its columns are customer_id, Date ,Year .
+
+Ques 3  :--  Let You have 2 dates that is Order Date and Delivery Date , how to calculate net working days having table name is sheet1.
+
+Ques 4  :--  Write DAX for Ranking on the basis of Sales Amount and Region , table name is Sales.
+
+Ques 5  :--  A table sales having its column named as Product & Total Sales, Product have its rows as A,B,C,D,E. Calculate Total Sales will greater than 500.
+
+Ques 6  :--  What is Manage Parameters in Power BI ? How many types of it.
+
+Ques 7  :-   A sales table contains columns for OrderDate, SalesAmount, and Region.Write a DAX formula to calculate the total sales for the last 30 days dynamically.
+
+Ques 8  :-   What is Performance Analyser in Power BI.
+
+Ques 9  :-   A table contains Product, Sales, and Date based on this Create a DAX measure to calculate the running total of sales for each product,.
+
+Ques 10  :-  A transactions table contains columns TransactionDate, CustomerID, and PurchaseAmount.
+             Write a measure to calculate the number of unique customers who made purchases in the last 12 months.
+
+
+                   ------------------------------------  Client Interview Questions  -------------------------------
+
+1) Tell me about yourself with project explanation and educational background.
+	
+	2) Have you used any cloud services, which one?
+	
+	3) Do you know about azure directory , where you have used ?
+	
+	4) Have you created CI/CD pipeline ?, can you explain how you have created?
+	
+	5) Tell me some challenges that you have faced in your Power BI report?
+	
+	6) Do you know about SSRS , where you have used SSRS in Power BI?
+	
+	7) What is Databricks?
+	
+	8) Have you used redshift? and why used?
+	
+	9) which services you have used in Azure?
+	
+	10) What services you have used in AWS , explain them .
+	
+	11) Services which has been used in AWS , how you have connected them to power BI?
+	
+	12) How databases connected to power BI? explain.
+	
+	13) Have you used datawarehouse in Power BI?
+	
+	14) What is your daily responsibility regarding Power BI Project?
+	
+	15)  What is your highest educational qualification?
+	
+	16) Have you ever worked in BFSI Department , edtech and financial department ?
+	
+	17) Are you comfortable in UK shift , how you will manage? 
+	
+	18) Have you worked in manufacturing department?
+	
+	19) How you convert pdf data into excel format in power BI?
+	
+	20) What is the requirement to connect your database to Power BI? 
+	
+	21) How you export your report in power BI?
+            when I have published my report to the Power BI Service , then click on File from there is option of Export to power Point , Export to PDF,
+            or you can download a pbix file.
+	
+	22) What are the sources to get data in power BI?
+	
+	23) What is RLS in power BI , how you used it in Power BI?
+	
+	24) Give some security measures that you have performed in your Power BI?
+	
+	25) How you will send your report to the client.?
+	
+	26) How you refreshes your report and dashboard?
+	
+	27) How you will know that your Software working properly?
+	
+	28) Mainly from which format you are getting your data?
+	
+	29) Have you used ETL in Power BI? how ?
+	
+	30) what is transformations in power BI? Explain.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
